@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+
+    <header class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-gradient-to-b from-slate-800 to-slate-900">
+        <img src="YOUR_IMAGE_URL_HERE" alt="Profile Photo" class="w-40 h-40 rounded-full border-4 border-blue-500 mb-6 object-cover shadow-xl">
+        <h1 class="text-5xl font-bold mb-2">Your Name</h1>
+        <p class="text-xl text-blue-400 mb-8 max-w-2xl font-mono">Data Engineer | Building Scalable Pipelines & Distributed Systems</p>
+        
+        <div class="flex gap-6 text-3xl">
+            <a href="YOUR_GITHUB_LINK" class="hover:text-blue-500 transition-colors"><i class="fab fa-github"></i></a>
+            <a href="YOUR_LINKEDIN_LINK" class="hover:text-blue-500 transition-colors"><i class="fab fa-linkedin"></i></a>
+            <a href="YOUR_CV_LINK" class="hover:text-blue-500 transition-colors" title="Download CV"><i class="fas fa-file-pdf"></i></a>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center border-b-2 border-blue-500 w-fit mx-auto pb-2">Technical Arsenal</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 bg-slate-800 rounded-lg shadow-md border border-slate-700 hover:border-blue-500 transition-all">
+                <p class="font-bold text-blue-400">Languages</p>
+                <p class="text-sm">Python, SQL, Scala, Go</p>
+            </div>
+            <div class="p-4 bg-slate-800 rounded-lg shadow-md border border-slate-700 hover:border-blue-500 transition-all">
+                <p class="font-bold text-blue-400">Data Processing</p>
+                <p class="text-sm">Spark, Flink, Kafka, dbt</p>
+            </div>
+            <div class="p-4 bg-slate-800 rounded-lg shadow-md border border-slate-700 hover:border-blue-500 transition-all">
+                <p class="font-bold text-blue-400">Infrastructure</p>
+                <p class="text-sm">Terraform, Docker, K8s</p>
+            </div>
+            <div class="p-4 bg-slate-800 rounded-lg shadow-md border border-slate-700 hover:border-blue-500 transition-all">
+                <p class="font-bold text-blue-400">Cloud</p>
+                <p class="text-sm">AWS (S3, Redshift, Glue)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Robust Engineering Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 hover:shadow-2xl transition-all">
+                    <h3 class="text-xl font-bold mb-2 text-blue-400">Real-Time Crypto Ingestion</h3>
+                    <p class="text-slate-400 text-sm mb-4">A sub-second latency pipeline using Kafka and Spark Streaming to detect price anomalies across 5 exchanges.</p>
+                    <div class="flex gap-2 mb-4 flex-wrap">
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">Kafka</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">PySpark</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">Terraform</span>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline font-mono text-sm">view_repo();</a>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 hover:shadow-2xl transition-all">
+                    <h3 class="text-xl font-bold mb-2 text-blue-400">Data Lakehouse Architect</h3>
+                    <p class="text-slate-400 text-sm mb-4">Migrating 10TB of legacy on-prem data to an AWS Medallion architecture using Delta Lake and Airflow.</p>
+                    <div class="flex gap-2 mb-4 flex-wrap">
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">S3</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">Delta Lake</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">Airflow</span>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline font-mono text-sm">view_repo();</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-500 text-sm">
+        <p>© 2026 Your Name | Built with Tailwind CSS</p>
+    </footer>
+
+</body>
+</html>

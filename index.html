@@ -3,78 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Engineer Portfolio</title>
+    <title>Data Engineer Portfolio | Stanley Agorchukwu</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text { background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans">
+<body class="bg-[#0f172a] text-slate-200 font-sans selection:bg-blue-500/30">
 
-    <header class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-gradient-to-b from-slate-800 to-slate-900">
-        <img src="Python SQL ETL DataWarehousing ApacheSpark Hadoop Airflow DataPipelines BigData AWS Azure GCP Kafka DataModeling DataIntegration NoSQL RelationalDatabases Linux Git DataQuality.png" alt="Profile Photo" class="w-40 h-40 rounded-full border-4 border-blue-500 mb-6 object-cover shadow-xl">
-        <h1 class="text-5xl font-bold mb-2">Stanley Agorchukwu</h1>
-        <p class="text-xl text-blue-400 mb-8 max-w-2xl font-mono">Data Engineer | Building Scalable Pipelines & Distributed Systems</p>
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 border-b border-slate-800">
+        <div class="relative group">
+            <img src="profile.png" alt="Stanley" class="w-48 h-48 rounded-2xl object-cover mb-8 border-2 border-slate-700 group-hover:border-blue-500 transition-colors shadow-2xl">
+            <div class="absolute -bottom-2 -right-2 bg-blue-600 px-3 py-1 rounded-lg text-xs font-bold tracking-widest uppercase">Available for Hire</div>
+        </div>
         
-        <div class="flex gap-6 text-3xl">
-            <a href="https://github.com/Classiquestan?tab=repositories" class="hover:text-blue-500 transition-colors"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/stanley-agorchukwu-a60935122/" class="hover:text-blue-500 transition-colors"><i class="fab fa-linkedin"></i></a>
-            <a href="YOUR_CV_LINK" class="hover:text-blue-500 transition-colors" title="Download CV"><i class="fas fa-file-pdf"></i></a>
-        </div>
-    </header>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">Hi, I'm <span class="gradient-text">Stanley Agorchukwu</span></h1>
+        <p class="text-xl md:text-2xl text-slate-400 max-w-2xl text-center leading-relaxed">
+            Data Engineer building <span class="text-white font-semibold italic">scalable systems</span> for real-time insights and robust data governance.
+        </p>
 
-    <section class="py-20 px-6 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center border-b-2 border-blue-500 w-fit mx-auto pb-2">Technical Arsenal</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="p-4 bg-slate-800 rounded-lg shadow-md border border-slate-700 hover:border-blue-500 transition-all">
-                <p class="font-bold text-blue-400">Languages</p>
-                <p class="text-sm">Python, SQL, Scala, Go</p>
+        <div class="mt-10 flex gap-6">
+            <a href="https://www.linkedin.com/in/stanley-agorchukwu-a60935122/" class="flex items-center gap-2 bg-slate-800 hover:bg-blue-600 px-6 py-3 rounded-full transition-all border border-slate-700">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="[YOUR_CV_LINK]" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full transition-all font-bold">
+                <i class="fas fa-file-download"></i> Download CV
+            </a>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-center text-sm font-bold tracking-[0.3em] uppercase text-slate-500 mb-12">Current Tech Stack</h2>
+        <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all">
+            <div class="text-center"><i class="fab fa-python text-4xl mb-2"></i><p class="text-xs font-mono">Python</p></div>
+            <div class="text-center"><i class="fas fa-database text-4xl mb-2"></i><p class="text-xs font-mono">SQL/dbt</p></div>
+            <div class="text-center"><i class="fas fa-bolt text-4xl mb-2 text-yellow-400"></i><p class="text-xs font-mono">Spark</p></div>
+            <div class="text-center"><i class="fas fa-wind text-4xl mb-2 text-blue-400"></i><p class="text-xs font-mono">Airflow</p></div>
+            <div class="text-center"><i class="fab fa-aws text-4xl mb-2"></i><p class="text-xs font-mono">AWS</p></div>
+            <div class="text-center"><i class="fab fa-docker text-4xl mb-2 text-blue-500"></i><p class="text-xs font-mono">Docker</p></div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-[#1e293b]/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-4">Featured Projects</h2>
+                <div class="h-1 w-20 bg-blue-500"></div>
             </div>
-            <div class="p-4 bg-slate-800 rounded-lg shadow-md border border-slate-700 hover:border-blue-500 transition-all">
-                <p class="font-bold text-blue-400">Data Processing</p>
-                <p class="text-sm">Spark, Flink, Kafka, dbt</p>
-            </div>
-            <div class="p-4 bg-slate-800 rounded-lg shadow-md border border-slate-700 hover:border-blue-500 transition-all">
-                <p class="font-bold text-blue-400">Infrastructure</p>
-                <p class="text-sm">Terraform, Docker, K8s</p>
-            </div>
-            <div class="p-4 bg-slate-800 rounded-lg shadow-md border border-slate-700 hover:border-blue-500 transition-all">
-                <p class="font-bold text-blue-400">Cloud</p>
-                <p class="text-sm">AWS (S3, Redshift, Glue)</p>
+
+            <div class="grid lg:grid-cols-3 gap-10">
+                
+                <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 card-hover flex flex-col">
+                    <div class="mb-6 overflow-hidden rounded-xl border border-slate-700 bg-slate-800">
+                        <img src="arch-diagram-1.png" alt="Architecture Diagram" class="w-full h-48 object-contain p-4 bg-slate-900">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-400 tracking-tight">The Crypto Ingestor</h3>
+                    <p class="text-slate-400 text-sm mb-6 grow leading-relaxed">
+                        <strong class="text-slate-200 block mb-1 uppercase text-xs">Problem:</strong> 
+                        Exchanges provide data in inconsistent formats with high latency.
+                    </p>
+                    <div class="flex gap-4 items-center justify-between border-t border-slate-800 pt-6">
+                        <span class="text-xs font-mono text-slate-500">Kafka • Spark • AWS</span>
+                        <a href="[YOUR_REPO]" class="text-white hover:text-blue-400 transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 card-hover flex flex-col">
+                    <div class="mb-6 overflow-hidden rounded-xl border border-slate-700 bg-slate-800">
+                        <img src="arch-diagram-2.png" alt="Architecture Diagram" class="w-full h-48 object-contain p-4 bg-slate-900">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-400 tracking-tight">Medallion Data Lake</h3>
+                    <p class="text-slate-400 text-sm mb-6 grow leading-relaxed">
+                        <strong class="text-slate-200 block mb-1 uppercase text-xs">Problem:</strong> 
+                        Moving 500GB of messy CSVs into a structured, queryable Lakehouse.
+                    </p>
+                    <div class="flex gap-4 items-center justify-between border-t border-slate-800 pt-6">
+                        <span class="text-xs font-mono text-slate-500">Delta Lake • dbt • Airflow</span>
+                        <a href="[YOUR_REPO]" class="text-white hover:text-blue-400 transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-[#0f172a] border border-slate-800 rounded-2xl p-6 card-hover flex flex-col">
+                    <div class="mb-6 overflow-hidden rounded-xl border border-slate-700 bg-slate-800">
+                        <img src="arch-diagram-3.png" alt="Architecture Diagram" class="w-full h-48 object-contain p-4 bg-slate-900">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-400 tracking-tight">Schema Registry Tool</h3>
+                    <p class="text-slate-400 text-sm mb-6 grow leading-relaxed">
+                        <strong class="text-slate-200 block mb-1 uppercase text-xs">Problem:</strong> 
+                        Upstream API changes frequently break production ETL jobs.
+                    </p>
+                    <div class="flex gap-4 items-center justify-between border-t border-slate-800 pt-6">
+                        <span class="text-xs font-mono text-slate-500">Python • Pydantic • FastAPI</span>
+                        <a href="[YOUR_REPO]" class="text-white hover:text-blue-400 transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-slate-800">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Robust Engineering Projects</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 hover:shadow-2xl transition-all">
-                    <h3 class="text-xl font-bold mb-2 text-blue-400">Real-Time Crypto Ingestion</h3>
-                    <p class="text-slate-400 text-sm mb-4">A sub-second latency pipeline using Kafka and Spark Streaming to detect price anomalies across 5 exchanges.</p>
-                    <div class="flex gap-2 mb-4 flex-wrap">
-                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">Kafka</span>
-                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">PySpark</span>
-                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">Terraform</span>
-                    </div>
-                    <a href="#" class="text-blue-400 hover:underline font-mono text-sm">view_repo();</a>
-                </div>
-
-                <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 hover:shadow-2xl transition-all">
-                    <h3 class="text-xl font-bold mb-2 text-blue-400">Data Lakehouse Architect</h3>
-                    <p class="text-slate-400 text-sm mb-4">Migrating 10TB of legacy on-prem data to an AWS Medallion architecture using Delta Lake and Airflow.</p>
-                    <div class="flex gap-2 mb-4 flex-wrap">
-                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">S3</span>
-                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">Delta Lake</span>
-                        <span class="text-xs bg-slate-700 px-2 py-1 rounded italic">Airflow</span>
-                    </div>
-                    <a href="#" class="text-blue-400 hover:underline font-mono text-sm">view_repo();</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-10 text-center text-slate-500 text-sm">
-        <p>© 2026 Your Name | Built with Tailwind CSS</p>
+    <footer class="py-12 text-center text-slate-600 border-t border-slate-900">
+        <p class="mb-2">Built with Python, Tailwind, and a lot of caffeine.</p>
+        <p class="text-xs">© 2026 Stanley Agorchukwu | <a href="#" class="hover:text-blue-500 underline decoration-dotted">Back to top</a></p>
     </footer>
 
 </body>
